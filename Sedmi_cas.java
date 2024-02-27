@@ -1,3 +1,4 @@
+import java.awt.geom.Arc2D;
 import java.util.Scanner;
 
 public class Sedmi_cas {
@@ -8,5 +9,15 @@ public class Sedmi_cas {
         a = Integer.parseInt(scanner.nextLine());
         b = Integer.parseInt(scanner.nextLine());
         System.out.println(a * b);
+
+//        2. zadatak
+        double inches = Double.parseDouble(scanner.nextLine());
+        System.out.println(inches * 2.54);
+
+//        3.zadatak
+        String ime = scanner.nextLine();
+        System.out.println("Hello, " + ime + "!");
+
+
     }
 }
