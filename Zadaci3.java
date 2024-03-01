@@ -67,6 +67,45 @@ public class Zadaci3 {
 
 //        7.zadatak
 
+        int broj_paketa_piletine = Integer.parseInt(scanner.nextLine());
+        int broj_paketa_ribe = Integer.parseInt(scanner.nextLine());
+        int broj_paketa_veg_hrane = Integer.parseInt(scanner.nextLine());
+
+        double stavka_piletina = broj_paketa_piletine * 10.35 ;
+        double stavka_riba = broj_paketa_ribe * 12.4 ;
+        double stavka_veg_hrana = broj_paketa_veg_hrane * 8.15 ;
+
+        double ukupno_hrane = stavka_piletina + stavka_riba + stavka_veg_hrana ;
+
+        double dezert = ukupno_hrane *0.2;
+        double dostava = 2.5;
+       double ukupan_racun = ukupno_hrane + dezert + dostava ;
+
+        System.out.println(ukupan_racun);
+
+//        8.zadaci
+
+        int godisnja_clanarina = Integer.parseInt(scanner.nextLine()) ;
+         double cena_patika = godisnja_clanarina * 0.6;
+        double oprema = cena_patika * 0.8 ;
+        double lopta = oprema * 0.25 ;//        (/4)
+        double dodaci = lopta * 0.2;
+
+        double ukupno1 = godisnja_clanarina + cena_patika + lopta + dodaci;
+        System.out.println(ukupno1);
+
+//        9.zadatak
+
+        int duzina = Integer.parseInt(scanner.nextLine());
+        int sirina = Integer.parseInt(scanner.nextLine());
+        int visina = Integer.parseInt(scanner.nextLine());
+        double procenat_dodaci = Double.parseDouble(scanner.nextLine());
+
+        double zapremina = (double)duzina * sirina * visina/1000 ; //cm kubni
+        double ukupno_litara = zapremina *(1-procenat_dodaci/100);
+
+        System.out.println(ukupno_litara);
+
 
 
 
